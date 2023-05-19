@@ -1,10 +1,11 @@
 # trillo-Automation
-Trillo API and UI test automation
+Trillo API and UI test automation.
 # Prerequisites
-- JDK 17
-- MAVEN 3.8.4 +
-- Chrome/Edge/IE/Firefox/Safari browsers
-- Existing user on Trillo
+- JDK 17.
+- MAVEN 3.8.4 +.
+- Chrome/Edge/IE/Firefox/Safari browsers.
+- valid user on Trillo.
+- Valid key and token.
 # How To Use
 1. Clone/Download the repository.
 2. Go to the cloned project folder location.
@@ -20,15 +21,15 @@ Trillo API and UI test automation
 ![detailed report2](https://github.com/mghazalde/trillo-Automation/assets/102529622/19fedd83-3c60-469a-89dc-241c8c980bf2)
 
 # Test Automation programming language, Framework and Reporting 
-- Language: JAVA
+- Language: JAVA.
 - API: Restassured. 
 - UI : Shaft Engine open source. (https://github.com/ShaftHQ/SHAFT_ENGINE) Selenium Ecosystem member. 
-- Reports: Allure reports
+- Reports: Allure reports.
 
 # Test Automation Design
-- Page object model design (pages classes contain locators, variables and actions, Test classes contain assertions)
-- Login data and API data stored in \src\main\resources\properties\environment.properties
-- Test data used for validations stored in src\test\resources\testDataFiles\testData.json
+- Page object model design (pages classes contain locators, variables and actions, Test classes contain assertions).
+- Login data and API data stored in \src\main\resources\properties\environment.properties.
+- Test data used for validations stored in src\test\resources\testDataFiles\testData.json.
  
 # trello Test Scope (2 test classes)
 - API 9 test class to validate:
@@ -46,10 +47,10 @@ Trillo API and UI test automation
 8. Moving back the first card by drag and drop.
 
 # Notes
-- Total testcases : 25
+- Total testcases : 25.
 - Before API test : all the created boards will be deleted.
 - Allure screenshots will be stored in \allure-results folder (will be created after first run).
-- If Allure report doesn't start, please run \generate_allure_report.bat
-- Screenshots of the report and maven run is stored in \screenshots
+- If Allure report doesn't start, please run \generate_allure_report.bat.
+- Screenshots of the report and maven run is stored in \screenshots.
 - Video recording of the execution is stored in \video  (video recording is disabled in \src\main\resources\properties\VisualValidations.properties) require vlc codec to run.
-- Test running (browser/headless execution/remote execution..etc) can be configued using the properties files in \src\main\resources\properties\
+- Test running (browser/headless execution/remote execution..etc) can be configued using the properties files in \src\main\resources\properties\.
