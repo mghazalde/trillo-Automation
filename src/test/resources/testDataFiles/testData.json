@@ -1,0 +1,9 @@
+{
+	"url1":"https://trello.com/login",
+	"atlasianTitle":"Log in with Atlassian account",
+	"boards":"boards",
+	"expectedResponseBoard": "My First Board",
+	"expectedResponseList": "My First List",
+	"expectedResponseCard": "My First Card",
+	"newCardName": "My Second Card"
+}
