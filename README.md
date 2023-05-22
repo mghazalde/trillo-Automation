@@ -32,11 +32,11 @@ Trillo API and UI test automation.
 - Test data used for validations stored in src\test\resources\testDataFiles\testData.json.
  
 # trello Test Scope (2 test classes)
-- API 9 test class to validate:
+- API 9 test classes to validate:
 1. Board creation.
 2. List creation.   
 3. Card creation.   
-- UI 16 test class to validate:
+- UI 16 test classes to validate:
 1. login with a valid user.
 2. created board.
 3. created list.
