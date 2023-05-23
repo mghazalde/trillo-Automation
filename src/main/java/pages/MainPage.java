@@ -23,7 +23,6 @@ public class MainPage {
 	String atlasianTitle = System.getProperty("atlasianTitle");
 
 	By trelloLoginBotton = By.xpath("//a[@class='Buttonsstyles__Button-sc-1jwidxo-0 kTwZBr']");
-
 	By userNameField = By.xpath("//input[@id='user']");
 	By loginButton = By.xpath("//input[@id='login']");
 	By passwordField = By.xpath("//input[@id='password']");
@@ -48,7 +47,6 @@ public class MainPage {
 
 	public MainPage loginPhase2() throws Exception {
 
-		// testData = new SHAFT.TestData.JSON("testData.json");
 		driver.element().type(userNameField, userName);
 		driver.element().click(loginButton);
 		Thread.sleep(1000);
@@ -58,7 +56,6 @@ public class MainPage {
 
 	public MainPage atlassianLogin() throws Exception {
 
-		// testData = new SHAFT.TestData.JSON("testData.json");
 		driver.element().type(passwordField, password).keyPress(loginSubmitButton, Keys.ENTER);
 		Thread.sleep(1000);
 
@@ -69,22 +66,18 @@ public class MainPage {
 
 		// login - negative scenario
 		driver.browser().refreshCurrentPage();
-		// driver.element().type(userName, generateRandomValues());
+	
 		Thread.sleep(1000);
-		// driver.element().type(password, test_ValidPwd);
+	
 		driver.element().click(loginButton);
 		return this;
 	}
 
-	public MainPage clickBoard() throws InterruptedException  {
+	public MainPage clickBoard() throws InterruptedException {
 
-	driver.element().click(boardLocation());
-	Thread.sleep(500);
-		
-//		js = (JavascriptExecutor) driver.getDriver();
-//		WebElement element = driver.getDriver().findElement(By.xpath("//div[@class='board-tile-details is-badged']"));
-//        js.executeScript("arguments[0].click();", element);
-        
+		driver.element().click(boardLocation());
+		Thread.sleep(500);
+
 		return this;
 	}
 }
